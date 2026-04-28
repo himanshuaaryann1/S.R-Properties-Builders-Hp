@@ -1,0 +1,215 @@
+/* App-specific styles - Premium Light Theme with Micro-animations */
+
+/* Navigation active link */
+.nav-link-active {
+    color: #2563EB;
+}
+
+/* Nav link hover animation */
+nav button, nav a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav button:hover, nav a:not(.btn-primary):hover {
+    color: #2563EB;
+}
+
+/* Star rating display with subtle animation */
+.star-filled {
+    color: #F59E0B;
+    fill: #F59E0B;
+    transition: transform 0.2s ease;
+}
+
+.star-filled:hover {
+    transform: scale(1.1);
+}
+
+.star-empty {
+    color: #E2E8F0;
+    fill: #E2E8F0;
+}
+
+/* EMI Calculator result highlight */
+.emi-result {
+    background: linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%);
+}
+
+/* Testimonial card gradient overlay with animation */
+.testimonial-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #2563EB, #0EA5E9);
+    border-radius: 1rem 1rem 0 0;
+    transition: height 0.3s ease;
+}
+
+.testimonial-card:hover::before {
+    height: 5px;
+}
+
+/* Map container styling */
+.map-container {
+    border-radius: 1.25rem;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+    transition: box-shadow 0.4s ease;
+}
+
+.map-container:hover {
+    box-shadow: 0 8px 32px rgba(15, 23, 42, 0.08);
+}
+
+/* Form field focus animation */
+.form-field {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.form-field:focus-within {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.08);
+}
+
+/* Input hover and focus animations */
+input, textarea, select, [role="combobox"] {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+input:hover, textarea:hover, select:hover, [role="combobox"]:hover {
+    border-color: rgba(37, 99, 235, 0.3);
+}
+
+/* Property type badge colors - Light Theme with hover */
+.badge-flat, .badge-house, .badge-plot, .badge-commercial {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.badge-flat {
+    background-color: #DBEAFE;
+    color: #1D4ED8;
+}
+
+.badge-house {
+    background-color: #D1FAE5;
+    color: #047857;
+}
+
+.badge-plot {
+    background-color: #FEF3C7;
+    color: #B45309;
+}
+
+.badge-commercial {
+    background-color: #F3E8FF;
+    color: #7C3AED;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+    background-color: #BFDBFE;
+    color: #1E40AF;
+}
+
+/* Loading spinner */
+.spinner {
+    border: 3px solid #E2E8F0;
+    border-top: 3px solid #2563EB;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Premium card styles with micro-animations */
+.card-premium {
+    background: #FFFFFF;
+    border-radius: 1.25rem;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04), 0 1px 3px rgba(15, 23, 42, 0.02);
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card-premium:hover {
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08), 0 6px 16px rgba(15, 23, 42, 0.04);
+    transform: translateY(-4px);
+}
+
+/* Hero image overlay for premium feel with animation */
+.hero-image-overlay {
+    position: relative;
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hero-image-overlay:hover {
+    transform: scale(1.01);
+}
+
+.hero-image-overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.03) 0%, rgba(14, 165, 233, 0.05) 100%);
+    border-radius: inherit;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+
+.hero-image-overlay:hover::after {
+    opacity: 0.7;
+}
+
+/* Image zoom on hover - subtle effect */
+.image-zoom {
+    overflow: hidden;
+    border-radius: inherit;
+}
+
+.image-zoom img {
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.image-zoom:hover img {
+    transform: scale(1.04);
+}
+
+/* Icon hover animation */
+.icon-hover {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-hover:hover {
+    transform: scale(1.1);
+}
+
+/* Link hover animation */
+a {
+    transition: color 0.3s ease;
+}
+
+/* Card content fade-in on hover */
+.card-content-animate {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Section backgrounds */
+.bg-section-primary {
+    background-color: #F8FAFC;
+}
+
+.bg-section-secondary {
+    background-color: #FFFFFF;
+}
