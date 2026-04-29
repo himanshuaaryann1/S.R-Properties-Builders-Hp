@@ -722,7 +722,7 @@ const EMICalculatorSection = () => {
                   </p>
                   <p className="text-[#334155] text-sm mb-8">per month</p>
                   <a 
-                    href="tel:+917357753577"
+                    href="tel:+919816021084"
                     className="btn-primary inline-flex items-center gap-2"
                   >
                     <Phone className="w-4 h-4" />
